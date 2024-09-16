@@ -143,7 +143,6 @@ class EIGEN(nn.Module):
     def entropy(self, inp, dim=0): 
         inp = inp
         return F.cross_entropy(inp, inp.softmax(dim=dim))
-    
     # Binary Cross Entropy
     def binary_cross_entropy(self, inp1, inp2, temp1=0.05, temp2=0.05, reduce=False):
         # inp1 and inp2 are eigenvectors without sigmoid
@@ -218,7 +217,7 @@ class EIGEN(nn.Module):
 
         lossfg = lossfg.mean(1)   # BxHW --> B
         lossbg = lossbg.mean(1)   # BxHW --> B
-                
+        
         if loss_etype in ["lossall"]:            
             batch_num = 0
             threshold_tmp = threshold

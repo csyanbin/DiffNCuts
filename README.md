@@ -4,7 +4,9 @@ This is the implementation of our ECCV 2024 paper "Unsupervised Dense Prediction
 ## 1. Dependencies
 This code was implemented with Python 3.10, PyTorch 1.13 and CUDA 11.6.   
 ```
-conda env create -f DiffNCuts.yml
+conda create -n DiffNCuts python=3.10
+conda activate DiffNCuts
+pip install -r requirements.txt
 ```
 
 ## 2. Data
@@ -26,7 +28,7 @@ CUDA_VISIBLE_DEVICES=0 python eigen_pred_iou.py --batch-size-pergpu 256 --base_l
 
 ## 4. Evaluating Unsupervised Saliency Detection
 ```
-python eval_det.py --ckpt_dir CKPT_DIR_PATH  --arch vit_small --cpu 41-56 --gpu 2 --tau 0.2 --epoch 2 --eigen_train 1 
+python eval_seg.py --ckpt_dir CKPT_DIR_PATH  --arch vit_small --cpu 1-8 --gpu 2 --tau 0.2 --epoch 2 --eigen_train 1 
 ```
 
 ## 5. Evaluating Unsupervised Object Discovery
@@ -34,7 +36,7 @@ Adapted from [TokenCut](https://github.com/YangtaoWANG95/TokenCut)
 Go to our ./TokenCut Folder and run
 ```
 cd TokenCut
-python eval_det.py --ckpt_dir CKPT_DIR_PATH  --arch vit_small --cpu 41-56 --gpu 2 --tau 0.2 --epoch 2 --eigen_train 1
+python eval_det.py --ckpt_dir CKPT_DIR_PATH  --arch vit_small --cpu 1-8 --gpu 2 --tau 0.2 --epoch 2 --eigen_train 1
 ```
 
 
