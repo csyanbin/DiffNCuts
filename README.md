@@ -1,5 +1,8 @@
 # Unsupervised Dense Prediction using Differentiable Normalized Cuts
-This is the implementation of our ECCV 2024 paper "Unsupervised Dense Prediction using Differentiable Normalized Cuts" by Yanbin Liu and Stephen Gould. 
+This is the implementation of our ECCV 2024 paper "Unsupervised Dense Prediction using Differentiable Normalized Cuts" by Yanbin Liu and Stephen Gould.   
+<img src="./Motivation_Figure.png" height="200" />
+
+
 
 ## 1. Dependencies
 This code was implemented with Python 3.10, PyTorch 1.13 and CUDA 11.6.   
