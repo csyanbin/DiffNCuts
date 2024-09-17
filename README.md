@@ -36,7 +36,7 @@ Adapted from [TokenCut](https://github.com/YangtaoWANG95/TokenCut)
 Go to our ./TokenCut Folder and run
 ```
 cd TokenCut
-python eval_det.py --ckpt_dir CKPT_DIR_PATH  --arch vit_small --cpu 1-8 --gpu 2 --tau 0.2 --epoch 2 --eigen_train 1
+python eval_det.py --ckpt_dir CKPT_DIR_PATH  --arch vit_small --cpu 1-8 --gpu 2 --tau 0.2 --epoch 1 --eigen_train 1
 ```
 
 

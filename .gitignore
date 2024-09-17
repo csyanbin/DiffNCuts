@@ -3,7 +3,6 @@ __pycache__/
 wandb/
 measure_logs/
 save_masks/
-checkpoints/
 datasets/DUT_OMRON/gt
 datasets/DUT_OMRON/img
 datasets/DUTS_Test/gt
@@ -16,4 +15,5 @@ datasets/COCO/*.zip
 datasets/COCO/annotations
 datasets/COCO/images
 TokenCut/datasets
-*.pth
+TokenCut/outputs
+*.tar

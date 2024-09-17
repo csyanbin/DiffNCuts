@@ -5,4 +5,4 @@ python eval_seg.py --ckpt_dir CKPT_DIR_PATH  --arch vit_small --cpu 1-16 --gpu 0
 
 # Ealuate Unsupervised Object Discovery
 cd TokenCut
-python eval_det.py --ckpt_dir CKPT_DIR_PATH  --arch vit_small --cpu 1-16 --gpu 0 --tau 0.2 --epoch 2 --eigen_train 1
+python eval_det.py --ckpt_dir CKPT_DIR_PATH  --arch vit_small --cpu 1-16 --gpu 0 --tau 0.2 --epoch 1 --eigen_train 1
